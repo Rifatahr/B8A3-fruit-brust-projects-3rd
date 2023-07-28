@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+    <!-- Tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<!-- tailwind custom -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+        font-family: 'Work Sans', sans-serif;
+        
+     
+    }
+</style> 
+</head>
+<body class="font-lato bg-white">
+<header>
+    <!-- <nav class="w-2000 h-300  bg-auto bg-white rounded-full relative "> -->
+        <nav class="w-1440 h-120 rounded-t-2xl bg-rose-500 flex items-center justify-between px-8 mt-6 mr-4 mb-8 ml-2">
+            <!-- First Div -->
+            <div class="flex items-center space-x-6">
+                <a href="#" class="text-white font-bold text-lg" style="font-size: 1.125rem;">Home</a>
+                <a href="#" class="text-white font-bold text-lg" style="font-size: 1.125rem;">About us</a>
+                <a href="#" class="text-white font-bold text-lg" style="font-size: 1.125rem;">Shop</a>
+                <a href="#" class="text-white font-bold text-lg" style="font-size: 1.125rem;">All Fruits</a>
+            </div>
+        
+            <!-- Second Div -->
+            <div class="flex items-center">
+                <img src="/images/logo.png" alt="Logo" class="h-10">
+                <span class="text-white font-bold  text-4xl ml-2 ">Fruit Burst</span>
+              </div>
+        
+            <!-- Third Div -->
+            <div class="flex items-center">
+                <div class="relative">
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs my-8 bg-white" />
+                  <span class="absolute right-4 top-1/2 transform -translate-y-1/2 text-rose-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-5.2-5.2M15.5 10.5a5 5 0 11-10 0 5 5 0 0110 0z"></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+          </nav>
+    <!-- </nav> -->
+</header>
+<main>
+  <!-- banner section start -->
+  <div class="relative w-1440 h-600 rounded-lg overflow-hidden">
+    <img src="images/banner1.png" alt="Banner Background" class="w-full h-full object-cover">
+    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
+      <h1 class="text-white text-4xl font-bold mb-4">Exotic tastes at your doorstep</h1>
+      <p class="text-white text-lg mb-6">We supply highly quality organic products</p>
+      <button class="btn btn-error text-white">Shop Now</button>
+    </div>
+  </div>
+  <!-- card section -->
+  <section class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 w-400 h-50 px-10">
+  <div class="card  bg-white ">
+    <figure class="px-10 pt-10">
+      <img src="images/fruit1.png" alt="Fruits" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-black text-opacity-80">Strawberry</h2>
+    </div>
+    </div>
+    <div class="card  bg-white ">
+      <figure class="px-10 pt-10">
+        <img src="images/fruit2.png" alt="Fruits" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title text-black text-opacity-80">Orange</h2>
+      </div>
+      </div>
+      <div class="card  bg-white ">
+        <figure class="px-10 pt-10">
+          <img src="images/fruit3.png" alt="Fruits" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-black text-opacity-80">Mango</h2>
+        </div>
+        </div>
+        <div class="card  bg-white ">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit4.png" alt="Fruits" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-black text-opacity-80">Strawberry</h2>
+          </div>
+          </div>
+          <div class="card  bg-white ">
+            <figure class="px-10 pt-10">
+              <img src="images/fruit5.png" alt="Fruits" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-black text-opacity-80">Mango</h2>
+            </div>
+            </div>
+          </section>
+
+
+</main>
+<footer>
+
+</footer>    
+</body>
+</html>
